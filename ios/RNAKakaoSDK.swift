@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import KakaoSDKCommon
+import KakaoSDK
 import KakaoSDKAuth
 import KakaoSDKUser
 import SafariServices
@@ -40,7 +40,7 @@ public class RNAKakaoSDK: NSObject {
 
     @objc(init:)
     func sdkinit(_ appKey: String) -> Void {
-        KakaoSDKCommon.initSDK(appKey: appKey)
+        KakaoSDK.initSDK(appKey: appKey)
         inited = true
     }
 
